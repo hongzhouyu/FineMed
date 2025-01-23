@@ -28,12 +28,12 @@ If you want to reproduce our research, please run the following code in sequence
 
 If FineMed or this repository is useful in your own research, you can use the following BibTeX entry:
 
-@misc{yu2025finemedlmo1enhancingmedicalreasoning,
-      title={FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training}, 
-      author={Hongzhou Yu and Tianhao Cheng and Ying Cheng and Rui Feng},
-      year={2025},
-      eprint={2501.09213},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2501.09213}, 
-}
+    @misc{yu2025finemedlmo1enhancingmedicalreasoning,
+        title={FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training}, 
+        author={Hongzhou Yu and Tianhao Cheng and Ying Cheng and Rui Feng},
+        year={2025},
+        eprint={2501.09213},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2501.09213}, 
+    }
