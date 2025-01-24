@@ -4,7 +4,7 @@ This repo includes the codebase and some introductions of FineMed, as described 
 
 ## Dataset
 
-We have uploaded the dataset to huggingface: 
+We have uploaded the datasets to huggingface: 
 
 SFT Datasets: https://huggingface.co/datasets/hongzhouyu/FineMed-SFT
 
