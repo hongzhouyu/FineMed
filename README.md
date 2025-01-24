@@ -1,6 +1,6 @@
 # What is this repo?
 
-This repo includes the codebase and some introductions of FineMed, as described in the paper 
+This repo includes the codebase and some introductions of FineMed, as described in the paper https://arxiv.org/abs/2501.09213
 
 ## Dataset
 
