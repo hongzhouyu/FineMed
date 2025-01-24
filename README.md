@@ -1,6 +1,6 @@
 # What is this repo?
 
-This repo includes the codebase and some introductions of FineMed, as described in the paper [FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training](https://arxiv.org/abs/2501.09213)
+This repo includes the codebase and some introductions of FineMed, as described in the paper [FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training](https://arxiv.org/abs/2501.09213).
 
 ## Dataset
 
