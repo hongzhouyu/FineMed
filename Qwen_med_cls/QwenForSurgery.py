@@ -80,7 +80,7 @@ def process_outputs(outputs):
         for _ in tqdm(as_completed(futures), total=len(futures)):
             pass  # 这里无需具体操作，只是等待每个任务完成
 
-processed_dataset = load_from_disk("/home/ma-user/work/code_dev/cth/data/med_cls/med_cls_prompt")
+processed_dataset = load_from_disk("/data/med_cls/med_cls_prompt")
 
 prompts = processed_dataset["prompt"][:100]
 model = "/home/ubuntu/test_disk/qwen7b"
