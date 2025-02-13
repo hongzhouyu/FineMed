@@ -9,8 +9,8 @@ from trl import SFTConfig, SFTTrainer
 # 设置使用 4, 5, 6, 7 号 GPU
 os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 
-tokenizer = AutoTokenizer.from_pretrained('/home/ma-user/work/code_dev/cth/model/FineMedLM-s2-lr5e-6/checkpoint-506', trust_remote_code=True)
-model = AutoModelForCausalLM.from_pretrained('/home/ma-user/work/code_dev/cth/model/FineMedLM-s2-lr5e-6/checkpoint-506') # device_map='auto',自动分配模型到多个 GPU
+tokenizer = AutoTokenizer.from_pretrained('/model/FineMedLM-s2-lr5e-6/checkpoint-506', trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained('/model/FineMedLM-s2-lr5e-6/checkpoint-506') # device_map='auto',自动分配模型到多个 GPU
 
 messages_template = [
     {"role": "system", "content": "You are a helpful professional doctor."},
@@ -53,7 +53,7 @@ def process_func(example):
     }
 
 print("-----Load SFT dataset-----")
-dataset1 = load_from_disk("/home/ma-user/work/code_dev/cth/Datasets/3StagesSFTData/InternalMedicine/Endocrinology")
+dataset1 = load_from_disk("/Datasets/3StagesSFTData/InternalMedicine/Endocrinology")
 print(dataset1)
 
 print("-----train_test_split-----")
@@ -84,10 +84,10 @@ tokenized_train_dataset = train_dataset.map(process_func, remove_columns=train_d
 tokenized_eval_dataset = eval_dataset.map(process_func, remove_columns=eval_dataset.column_names)
 
 args = SFTConfig(
-    output_dir="/home/ma-user/work/code_dev/cth/model/FineMedLM-s3-lr5e-6",
+    output_dir="/model/FineMedLM-s3-lr5e-6",
     per_device_train_batch_size=8,
     gradient_accumulation_steps=4,
-    logging_dir="/home/ma-user/work/code_dev/cth/model/logs", # TensorBoard日志文件保存路径
+    logging_dir="/model/logs", # TensorBoard日志文件保存路径
     logging_steps=10,               # 每10步记录一次日志
     eval_steps=30,
     num_train_epochs=1,
@@ -100,7 +100,7 @@ args = SFTConfig(
     gradient_checkpointing=True,
     seed=42,                         # 设置全局随机种子
     bf16=True,  # 启用 bf16
-    # deepspeed="/home/ma-user/work/code_dev/cth/code/SFT/ds_config.json",        # 指定 DeepSpeed 配置文件路径
+    # deepspeed="/code/SFT/ds_config.json",        # 指定 DeepSpeed 配置文件路径
     # 很重要！
     # gradient_checkpointing_kwargs={"use_reentrant":False}
 )
@@ -115,7 +115,7 @@ trainer = SFTTrainer(
 
 print("-----Starting Training-----")
 trainer.train()
-# trainer.save_model(output_dir="/home/ma-user/work/code_dev/cth/model/FineMedLM-lr1e-5/final")
-# tokenizer.save_pretrained("/home/ma-user/work/code_dev/cth/model/FineMedLM-lr1e-5/final")
+# trainer.save_model(output_dir="/model/FineMedLM-lr1e-5/final")
+# tokenizer.save_pretrained("/model/FineMedLM-lr1e-5/final")
 
 print("-----SFT succeeded!-----")
