@@ -6,17 +6,17 @@ This repo includes the codebase and some introductions of FineMed, as described 
 
 We have uploaded the datasets to huggingface: 
 
-SFT Datasets: https://huggingface.co/datasets/hongzhouyu/FineMed-SFT
+SFT Datasets: 
 
-DPO Dataset: https://huggingface.co/datasets/hongzhouyu/FineMed-DPO
+DPO Dataset: 
 
 ## Models
 
 We have uploaded the models to huggingface:
 
-FineMedLM: https://huggingface.co/hongzhouyu/FineMedLM
+FineMedLM: 
 
-FineMedLM-o1: https://huggingface.co/hongzhouyu/FineMedLM-o1
+FineMedLM-o1: 
 
 ## Reproduction
 
@@ -27,3 +27,5 @@ If you want to reproduce our research, please run the following code in sequence
 2. Qwen_med_cls
 
 3. SFT
+
+4. TTT
