@@ -28,6 +28,8 @@ If you want to reproduce our research, please run the following code in sequence
 
 3. SFT
 
+4. TTT
+
 ## Citing FineMed:
 
 If FineMed or this repository is useful in your own research, you can use the following BibTeX entry:
