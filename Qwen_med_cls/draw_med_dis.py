@@ -1,12 +1,3 @@
-# ... existing code ...
-import os
-# 修改缓存目录到用户目录下
-# os.environ['HF_HOME'] = os.path.expanduser('~/.cache/huggingface')
-# os.environ['TRANSFORMERS_CACHE'] = os.path.expanduser('~/.cache/huggingface')
-
-# 确保缓存目录存在
-# os.makedirs(os.environ['HF_HOME'], exist_ok=True)
-# ... existing code ...
 import random
 import numpy as np
 import matplotlib.pyplot as plt
