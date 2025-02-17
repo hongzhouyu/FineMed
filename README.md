@@ -4,7 +4,7 @@ This repo includes the codebase and some introductions of FineMed, as described 
 
 ## Dataset
 
-We have uploaded the datasets to huggingface: 
+We have uploaded the datasets to xxx: 
 
 SFT Datasets: 
 
@@ -12,7 +12,7 @@ DPO Dataset:
 
 ## Models
 
-We have uploaded the models to huggingface:
+We have uploaded the models to xxx:
 
 FineMedLM: 
 
