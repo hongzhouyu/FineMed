@@ -1,3 +1,7 @@
+"""
+If you see this, I wish you a good life! :)
+"""
+
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from datasets import load_from_disk
