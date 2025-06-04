@@ -26,7 +26,7 @@ If you want to reproduce our research, please run the following code in sequence
 
 2. Qwen_med_cls
 
-3. SFT
+3. Training
 
 4. TTT
 
