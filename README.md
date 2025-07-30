@@ -30,6 +30,10 @@ If you want to reproduce our research, please run the following code in sequence
 
 4. TTT
 
+## Email
+
+If you are interested in FineMed, feel free to email me at hzyu24@m.fudan.edu.cn!
+
 ## Citing FineMed:
 
 If FineMed or this repository is useful in your own research, you can use the following BibTeX entry:
