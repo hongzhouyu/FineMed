@@ -32,7 +32,7 @@ If you want to reproduce our research, please run the following code in sequence
 
 ## Email
 
-If you are interested in FineMed, feel free to email me at \text{hzyu24@m.fudan.edu.cn}!
+If you are interested in FineMed, feel free to email me at hzyu24@m.fudan.edu.cn!
 
 ## Citing FineMed:
 
