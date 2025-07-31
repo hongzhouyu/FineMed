@@ -38,12 +38,12 @@ If you are interested in FineMed, feel free to email me at hzyu24@m.fudan.edu.cn
 
 If FineMed or this repository is useful in your own research, you can use the following BibTeX entry:
 
-    @misc{yu2025finemedlmo1enhancingmedicalreasoning,
-        title={FineMedLM-o1: Enhancing the Medical Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training}, 
-        author={Hongzhou Yu and Tianhao Cheng and Ying Cheng and Rui Feng},
-        year={2025},
-        eprint={2501.09213},
-        archivePrefix={arXiv},
-        primaryClass={cs.CL},
-        url={https://arxiv.org/abs/2501.09213}, 
+    @misc{yu2025finemedlmo1enhancingmedicalknowledge,
+      title={FineMedLM-o1: Enhancing Medical Knowledge Reasoning Ability of LLM from Supervised Fine-Tuning to Test-Time Training}, 
+      author={Hongzhou Yu and Tianhao Cheng and Yingwen Wang and Wen He and Qing Wang and Ying Cheng and Yuejie Zhang and Rui Feng and Xiaobo Zhang},
+      year={2025},
+      eprint={2501.09213},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.09213}, 
     }
