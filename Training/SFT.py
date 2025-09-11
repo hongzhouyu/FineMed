@@ -43,8 +43,10 @@ args = SFTConfig(
     report_to="tensorboard",         # 日志会被记录到 output_dir 下的 runs/
     bf16=True,  # 启用 bf16
     # deepspeed="/code/SFT/ds_config.json",        # 指定 DeepSpeed 配置文件路径
-    # 很重要！
-    # gradient_checkpointing_kwargs={"use_reentrant":False}
+    save_steps=80,
+    save_total_limit=5,
+    save_only_model=True,
+    save_safetensors=True,
 )
 
 trainer = SFTTrainer(
